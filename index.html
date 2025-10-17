@@ -2,14 +2,68 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>はじめてのWebサイト</title>
+  <title>My Simple Page</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #0078ff; }
+    /* 🌿 ベース設定 */
+    body {
+      font-family: "Noto Sans JP", "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f8fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* 🌿 見出し */
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
+
+    /* 🌿 テキスト */
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2em;
+    }
+
+    /* 🌿 ボタン */
+    a.button {
+      padding: 12px 28px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    a.button:hover {
+      background: #0078ff;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    /* 🌿 フッター */
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #999;
+    }
   </style>
 </head>
 <body>
-  <h1>こんにちは！</h1>
-  <p>これはWindowsで作ったWebページです。</p>
+  <h1>ようこそ。</h1>
+  <p>シンプルで洗練されたWebページへようこそ。</p>
+  <a href="#" class="button">詳しく見る</a>
+
+  <footer>© 2025 My Website</footer>
 </body>
 </html>
